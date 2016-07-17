@@ -17,22 +17,38 @@ function run (opts) {
 
 test('should not remove warnings', t => {
   return run().then(result => {
+    t.is(result.messages.length, 3)
+  })
+})
+
+test('warnings from the matched file should be removed ', t => {
+  let opts = { ignoreFiles: '**/error-1.css' }
+
+  return run(opts).then(result => {
     t.is(result.messages.length, 2)
   })
 })
 
-test('warnings from the specified file should be removed ', t => {
-  let opts = { ignoreFiles: /error-1/ }
+test('warnings from the matched files should be removed ', t => {
+  let opts = { ignoreFiles: '**/error-*' }
 
   return run(opts).then(result => {
     t.is(result.messages.length, 1)
   })
 })
 
-test('warnings from the specified files should be removed ', t => {
-  let opts = { ignoreFiles: [/error-1/, /error-2/] }
+test('warnings from the matched files should be removed ', t => {
+  let opts = { ignoreFiles: ['**/error-1.css', '**/error-2.css'] }
 
   return run(opts).then(result => {
-    t.is(result.messages.length, 0)
+    t.is(result.messages.length, 1)
+  })
+})
+
+test('warnings from the matched files should be removed ', t => {
+  let opts = { ignoreFiles: ['**/error-3/*'] }
+
+  return run(opts).then(result => {
+    t.is(result.messages.length, 2)
   })
 })
