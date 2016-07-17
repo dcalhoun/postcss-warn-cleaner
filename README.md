@@ -17,7 +17,7 @@ $ npm install postcss-warn-cleaner
 ```
 
 #### `ignoreFiles`
-Define directories to ignore from which to ignore warnings.
+Set files from which to ignore warnings.
 
 ###### Accepted Values
 - `{Regex}`
