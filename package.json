@@ -1,6 +1,6 @@
 {
   "name": "postcss-warn-cleaner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Selectively remove postcss warnings from logs.",
   "main": "dist/postcss-warn-cleaner.js",
   "files": [
