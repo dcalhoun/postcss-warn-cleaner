@@ -26,13 +26,13 @@ Set files from which to ignore warnings.
 ###### Examples
 ```javascript
 warnCleaner({
-  ignoreFiles: 'node_modules/**/*'
+  ignoreFiles: '**/node_modules/**/*'
 })
 
 warnCleaner({
   ignoreFiles: [
-    'node_modules/**/*',
-    'vendor/**/*'
+    '**/node_modules/**/*',
+    '**/bower_components/**/*'
   ]
 })
 ```

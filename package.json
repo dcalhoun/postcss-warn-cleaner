@@ -10,6 +10,7 @@
   "scripts": {
     "build": "babel lib -d dist",
     "lint": "standard lib/**/*.js test/**/*.js",
+    "release": "npm run build && npm publish",
     "test": "ava"
   },
   "repository": {
