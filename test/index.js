@@ -21,14 +21,18 @@ test('should not remove warnings', t => {
   })
 })
 
-test('warnings from the specified directory should be removed ', t => {
-  return run({ ignoreFiles: /error-1/ }).then(result => {
+test('warnings from the specified file should be removed ', t => {
+  let opts = { ignoreFiles: /error-1/ }
+
+  return run(opts).then(result => {
     t.is(result.messages.length, 1)
   })
 })
 
-test('warnings from the specified directories should be removed ', t => {
-  return run({ ignoreFiles: [/error-1/, /error-2/] }).then(result => {
+test('warnings from the specified files should be removed ', t => {
+  let opts = { ignoreFiles: [/error-1/, /error-2/] }
+
+  return run(opts).then(result => {
     t.is(result.messages.length, 0)
   })
 })
