@@ -25,14 +25,41 @@ Set files from which to ignore warnings.
 
 ###### Examples
 ```javascript
+// Example #1: single file
 warnCleaner({
   ignoreFiles: '**/node_modules/**/*'
 })
 
+// Example #2: array of files
 warnCleaner({
   ignoreFiles: [
     '**/node_modules/**/*',
     '**/bower_components/**/*'
   ]
 })
+```
+
+###### Full configuration example
+In your `webpack.config.js`, do:
+
+```javascript
+const warnCleaner = require('postcss-warn-cleaner');
+
+module.exports = {
+  module: {
+    loaders: [
+      {
+        // css loader
+        test: /\.css$/,
+        loaders: ['style', 'css?-url', 'postcss']
+      },
+    }],
+  },
+  // array of postcss plugins
+  postcss: [
+    warnCleaner({
+      ignoreFiles: '**/node_modules/**/*'
+    })
+  ]
+};
 ```
