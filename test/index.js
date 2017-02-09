@@ -17,7 +17,8 @@ function run (opts) {
 
 test('should not remove warnings', t => {
   return run().then(result => {
-    t.is(result.messages.length, 3)
+    const warnings = result.messages.filter(m => m.type === 'warning')
+    t.is(warnings.length, 3)
   })
 })
 
