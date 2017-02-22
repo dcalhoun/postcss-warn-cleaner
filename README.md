@@ -1,4 +1,6 @@
 # postcss-warn-cleaner
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/dcalhoun/postcss-warn-cleaner.svg)](https://greenkeeper.io/)
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 [![Build Status](https://travis-ci.org/dcalhoun/postcss-warn-cleaner.svg?branch=master)](https://travis-ci.org/dcalhoun/postcss-warn-cleaner)
 
