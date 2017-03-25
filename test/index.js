@@ -6,7 +6,7 @@ import postcss from 'postcss'
 import test from 'ava'
 
 function run (opts) {
-  let inputCSS = fs.readFileSync('./fixtures/index.css', 'utf8')
+  let inputCSS = fs.readFileSync('test/fixtures/index.css', 'utf8')
 
   return postcss([
     postcssImport,
