@@ -36,7 +36,7 @@
   "homepage": "https://github.com/dcalhoun/postcss-warn-cleaner#readme",
   "dependencies": {
     "multimatch": "^2.1.0",
-    "postcss": "^5.1.0"
+    "postcss": "^6.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
