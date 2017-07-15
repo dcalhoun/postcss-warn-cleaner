@@ -1,7 +1,7 @@
 # postcss-warn-cleaner
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/dcalhoun/postcss-warn-cleaner.svg)](https://greenkeeper.io/)
-[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Build Status](https://travis-ci.org/dcalhoun/postcss-warn-cleaner.svg?branch=master)](https://travis-ci.org/dcalhoun/postcss-warn-cleaner)
 
 Selectively remove PostCSS warnings from your logs. For example, you may choose to ignore autoprefixer warnings resulting from third-party vendor libraries.
