@@ -39,7 +39,7 @@
     "postcss": "^6.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^7.0.0",
+    "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.3",
     "babel-preset-es2015": "^6.24.1",
