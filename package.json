@@ -47,7 +47,7 @@
     "babel-register": "^6.26.0",
     "jest": "^22.0.1",
     "postcss-import": "^11.0.0",
-    "standard": "^10.0.3"
+    "standard": "^11.0.0"
   },
   "ava": {
     "require": [
